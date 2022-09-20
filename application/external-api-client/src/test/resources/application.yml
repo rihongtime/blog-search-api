@@ -1,0 +1,24 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  main:
+    allow-bean-definition-overriding: true
+
+open-api:
+  kakao:
+    domain: https://dapi.kakao.com
+    key: 568a7c9ecb4f354b000ffa57c4725d9f
+    search-path:
+      blog: /v2/search/blog
+
+  naver:
+    domain: https://openapi.naver.com
+    client-id: ropub08ieeRXo4xTMHmI
+    client-secret: oLDrfHeQlJ
+    search-path:
+      blog: /v1/search/blog.json
+
+logging:
+  level:
+    root: ${external.api.logging.level.root:info}
