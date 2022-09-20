@@ -151,7 +151,7 @@ http://localhost:8888
 ### Swagger API 요청 테스트 경로
 
 ```
-http://localhost:8080Ï/swagger-ui.html
+http://localhost:8080/swagger-ui.html
 ```
 
 ### 빌드 정보
