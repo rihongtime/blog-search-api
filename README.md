@@ -138,23 +138,29 @@ runtimeOnly("io.netty:netty-resolver-dns-native-macos:4.1.77.Final:osx-aarch_64"
 
 서버 실행 후 Redis 확인
 ```
-http://localhost:6379
+localhost:6379
 ```
+<img width="402" alt="image" src="https://user-images.githubusercontent.com/68045411/191398386-259cf88d-9076-4a4e-845f-0adb0e5d6b21.png">
+
+<img width="227" alt="image" src="https://user-images.githubusercontent.com/68045411/191398278-57f6b363-8fb1-4cde-a4d8-2c1a5fd6c5bb.png">
 
 ### H2 console
 
-서버 실행 후 Database 확인 콘솔
+- 서버 실행 후 Database 확인 콘솔
+- JDBC URL: jdbc:h2:mem:blog
 ```
 http://localhost:8888
 ```
+<img width="466" alt="image" src="https://user-images.githubusercontent.com/68045411/191398150-fd53c3bb-883f-4eb7-ac31-5211f7ea9742.png">
 
-### Swagger API 요청 테스트 경로
+### Swagger API 테스트 경로
 
 ```
 http://localhost:8080/swagger-ui.html
 ```
 
 ### 빌드 정보
+- root에서 실행
 ```
 ./gradlew :application:api:clean :application:api:bootJar -x test 
 ```
