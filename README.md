@@ -31,6 +31,7 @@
 #### 블로그 검색 API
 `GET /v1/search/blog`
 
+#### request
 - request parameter
   - query : 검색어(필수)
     - String
@@ -50,7 +51,7 @@ curl -X 'GET' \
   -H 'accept: */*'
 }'
 ``` 
-response
+#### response
 ```
   "result": "SUCCESS",
   "data": {
@@ -75,13 +76,13 @@ response
 #### 인기 검색어 목록 API
 `GET /v1/search/blog/rank`
 
-request
+#### request
 ```
 curl -X 'GET' \
   'http://localhost:8080/v1/search/blog/rank' \
   -H 'accept: */*'
 ```
-response
+#### response
 ```
 {
   "result": "SUCCESS",
